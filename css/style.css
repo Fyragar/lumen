@@ -1,129 +1,40 @@
-* {
-    margin: 0;
+:root{
+    --main-font-family: 'Inter',sans-serif;
+    --backround-color: #fff5f0;
+    --backround-color: #FF7931;
+    --backround-color: #1A0B00;
+    --backround-color: #451D00;
+    --backround-color: #ffffff;
+}
+
+*,
+*::before,
+*::after{
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
-.container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    /* flex-wrap: wrap; */
-    align-content: space-evenly;
-    gap: 30px;
+
+.container{
     position: relative;
-    width: 800px;
-    min-height: 800px;
-    margin:50px;
-    border: 5px solid black;
-    background: coral;
+    max-width: 1240px;
+    margin: 0 auto;
+    background-color: rgb(238, 214, 214);
 }
 
-.block {
-    width: 200px;
-    height: 200px;
-    background: lightskyblue;
-    border: 2px solid darkblue;
-}
-
-
-.icon {
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    z-index: 10;
-}
-
-.block:first-child {
-    font-size: 48px;
-    flex-grow: 1;
-    order: 5;
-}
-
-.block:last-child {
-    font-size: 60px;
-    flex-grow: 5;
-    order: -1;
-}
-
-.block:nth-child(5) {
-    flex-shrink: 0;
-}
-
-.block:nth-child(7) {
-    flex-shrink: 5;
-}
-
-/*----------верстка макета--------------*/
-header,
-footer {
-    background-color: aqua;
-    padding: 20px;
-}
-
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-html,
-body {
+body{
     height: 100vh;
-}
-
-body {
-    display: flex;
     flex-direction: column;
-}
-
-.wrap {
-    flex-grow: 1;
     display: flex;
-}
-
-aside{
-    background-color: rgb(0, 150, 25);
-    width: 50%;
+    font-family: var(--main-font-family);
+    background-color: #fff5f0;
 }
 
 main{
-    background-color: blueviolet;
     flex-grow: 1;
 }
 
-.main-menu{
-    display: flex;
-    gap: 20px;
-    list-style: none;
-
-}
-
-.main-menu li {
-    flex-shrink: 0;
-}
-
-.card{
-    width: 120px;
-    height: 120px;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.catalog{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px 50px;
-}
-
-.wrapper{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    width: 1200px;
-    margin: 0 auto;
+header{
+    box-shadow: #1A0B00;
 }
