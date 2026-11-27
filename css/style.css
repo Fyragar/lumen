@@ -15,14 +15,31 @@
     box-sizing: border-box;
 }
 
+header{
+    box-shadow:0 1px 15px #451D0018;
+    
+}
 
 .container{
     position: relative;
     max-width: 1240px;
     margin: 0 auto;
-    background-color: rgb(238, 214, 214);
+}
+.header__container{
+    flex-direction:row;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
 }
 
+.header__mainmenu ul{
+    flex-direction:row;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    list-style: none;
+}
+    
 body{
     height: 100vh;
     flex-direction: column;
@@ -35,6 +52,3 @@ main{
     flex-grow: 1;
 }
 
-header{
-    box-shadow: #1A0B00;
-}
